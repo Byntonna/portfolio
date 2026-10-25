@@ -41,8 +41,10 @@ defineProps ({
           {{ description }}
         </p>
       </div>
-      <NuxtLink :to="buttonLink" class="nuxtLink">
-        <button v-if="isButtonShow">
+      <NuxtLink v-if="isButtonShow && buttonLink"
+                :to="buttonLink"
+                class="nuxtLink">
+        <button>
           Как я его создавал
         </button>
       </NuxtLink>
