@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('//fonts/PTSans-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('//fonts/PTSans-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    --main-black: #DBDBDA;
+    --text-black: #262625;
+    --text-small: 0.875rem;  /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-title: 1.125rem;  /* 18px */
+    --border-radius-default: 0.5rem;
+}
+
+button {
+    background-color: #1C1C1C;
+    transition: background-color 0.3s;
+    padding: 0.5em 1em;
+    font-weight: normal;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-default);
+}
+
+button:hover {
+    background-color: #494949
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    text-wrap: balance;
+    line-height: 1.5;
+}
+
+p, a {
+    color: var(--text-black);
+}
+
+a:hover {
+    color: mediumblue;
+}
+
+body {
+    background-color: #FCFCFB;
+}
+
+h1 {
+    font-size: var(--text-title);
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2, .cardTitle {
+    font-size: var(--text-title);
+    font-weight: normal;
+}
