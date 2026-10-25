@@ -21,6 +21,7 @@
     --text-base: 1rem;       /* 16px */
     --text-title: 1.125rem;  /* 18px */
     --border-radius-default: 0.5rem;
+    --max-width: 70ch;
 }
 
 button {
@@ -68,4 +69,11 @@ h1 {
 h2, .cardTitle {
     font-size: var(--text-title);
     font-weight: normal;
+}
+
+figcaption {
+    color: #494949;
+    font-size: var(--text-small);
+    font-style: italic;
+    margin-bottom: 1em;
 }

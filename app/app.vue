@@ -14,11 +14,12 @@
   margin-inline: auto;
   margin-top: 4rem;
   text-align: left;
-  max-width: 70ch;
+  max-width: var(--max-width);
   position: relative;
+  padding-bottom: 30vh;
 }
 .navigator {
-  position: absolute;
+  position: fixed;
   right: clamp(4rem, 8vw, 7rem);
   top: 0;
 }
@@ -33,6 +34,7 @@
     order: 1;
     width: 100%;
     padding-inline: 1.25rem;
+    padding-bottom: 5vh;
   }
 
   .navigator {
@@ -57,12 +59,13 @@
     grid-row: 1;
     width: 100%;
     min-width: 0;
+    padding-bottom: 15vh;
   }
 
   .navigator {
     grid-column: 2;
     grid-row: 1;
-    position: static;
+    position: fixed;
   }
 }
 </style>

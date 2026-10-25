@@ -35,6 +35,11 @@ useSeoMeta({
     чем хотелось. Кроме того, коллегия хотела публиковать статьи с разбором судебной практики.
   </p>
 
+  <figure>
+    <img src="~/assets/articles/avalon/old.webp" alt="Старый сайт коллегии"/>
+    <figcaption>Старый сайт коллегии</figcaption>
+  </figure>
+
   <h2>Что я сделал</h2>
   <p>
     Разработал новый дизайн, перенёс сайт с WordPress на самописное решение и развернул его.
@@ -49,6 +54,10 @@ useSeoMeta({
     Для редактирования блога я выбрал Decap CMS, систему на основе Git. Ей не нужен собственный бэкенд, поэтому сайту
     требуется меньше серверных мощностей, а значит, он дешевле в содержании.
   </p>
+  <figure>
+    <img src="~/assets/articles/avalon/admin.webp" alt="Админ-панель"/>
+    <figcaption>Админ-панель CMS</figcaption>
+  </figure>
   <p>
     Развернул я сайт на Timeweb Cloud, с которым работаю с 2023 года, на сервисе App Platform. Он сам собирает и
     выкладывает сайт, а оплата зависит от числа запросов. У сайта коллегии адвокатов вряд ли будет большая нагрузка,
@@ -57,6 +66,11 @@ useSeoMeta({
 
   <h2>Что получилось</h2>
   <p>Сайт запущен, заказчик доволен. <a href="https://avaloncollegium.com/">Ссылка на сайт</a></p>
+
+  <figure>
+    <img src="~/assets/articles/avalon/new.webp" alt="Новый сайт коллегии"/>
+    <figcaption>Новый сайт коллегии</figcaption>
+  </figure>
 
   <h2>Что было сложно</h2>
   <p>Первая трудность: App Platform отвечает кодом 200 на запросы несуществующих страниц. Из-за этого поисковые роботы
@@ -70,5 +84,17 @@ useSeoMeta({
 <style scoped>
 p {
   margin-block: 0.5em;
+}
+
+img {
+  max-width: min(100%, 43ch);
+  height: auto;
+  border-radius: var(--border-radius-default);
+}
+
+@media (min-width: 850px) {
+  img {
+    max-width: min(100%, 60ch);
+  }
 }
 </style>
