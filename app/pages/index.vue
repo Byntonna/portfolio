@@ -2,22 +2,26 @@
 const card1_content = { title: 'Menura', description: 'B2B сервис для составления ресторанного меню онлайн и с ' +
       'отображением на телевизоре. Спроектировал архитектуру и развернул сервис, сейчас его развивает другой разработчик. ' +
       'Проект приносит прибыль.', image: 'cards/menura.webp', projectLink: 'https://menura.ru' }
-const card2_content = { title: 'АВАЛОН', description: 'Лендинг для питерской коллегии адвокатов.', image: 'cards/avalon.webp',
+const card2_content = { title: 'АВАЛОН', description: 'Лендинг и блог для питерской коллегии адвокатов. ' +
+      'Перенёс сайт с WordPress на собственное решение на Nuxt.', image: 'cards/avalon.webp',
       projectLink: 'https://avaloncollegium.com/', buttonLink: '/avalon'}
-const card3_content = { title: 'Montera', description: 'Нативная программа для учёта финансов. ' +
-      'Создавался как учебный проект.', image: 'cards/montera.webp' }
+const card3_content = { title: 'Montera', description: 'Кроссплатформенное приложение для учёта личных финансов: доходы ' +
+      'и расходы, цели, история и аналитика с прогнозом. Windows, macOS и Linux, Avalonia UI и .NET (C#).',
+      image: 'cards/montera.webp' }
 const card4_content = { title: 'Gate to East Tours', description: 'Сайт с экскурсиями по Китаю с возможностью оставить заявку на ' +
       'заинтересовавшуюся экскурсию. Сайт приостановлен до завершения регистрации владельца как оператора ' +
       'персональных данных.', image: 'cards/gate.webp' }
 
-const items = ref({card1_content, card2_content, card3_content, card4_content})
+// const items = ref({card1_content, card2_content, card3_content, card4_content})
 </script>
 
 <template>
   <div class="sections">
     <section>
       <h1>Обо мне</h1>
-      <p>Меня зовут Александр Грудин, я студент-первокурсник ОмГТУ, учусь на программной инженерии.</p>
+      <p>Меня зовут Александр Грудин, я студент-первокурсник ОмГТУ, учусь на программной инженерии. Беру небольшие
+        проекты для реальных заказчиков и довожу их до рабочего продукта. Больше всего мне интересны деплой
+        и инфраструктура. Сейчас в рамках проектной деятельности в вузе разрабатываю игру на Godot.</p>
     </section>
     <section>
       <h1>Проекты</h1>
